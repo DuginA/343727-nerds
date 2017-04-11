@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Артём Дугин](https://up.htmlacademy.ru/htmlcss/17/user/343727).
-* Наставник: [Александр Кошара](https://github.com/alex-koshara)
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/sk0tti)
 
 ---
 
