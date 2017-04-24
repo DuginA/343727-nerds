@@ -38,4 +38,35 @@ body {
 }
 
 
+<<<<<<< HEAD
+.main-header nav{
+  display: inline-block;
+}
+
+.main-header .user-block{
+  float: right;
+  margin-top: 49px;
+}
+
+.logo img{
+  width: 160px;
+  height: 65px;
+  margin-left: 140px;
+  margin-top: 49px;
+  }
+
+.main-navigation li {
+  display: inline-block;
+}
+
+.main-navigation a {
+  margin-right: 45px;
+}
+
+.title h1 {
+  margin: 0 auto;
+}
+
+=======
+>>>>>>> origin/master
 
