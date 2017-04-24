@@ -7,6 +7,9 @@ body {
 	color: #000000;
 	font-weight: bold;
 	font-family: "Roboto","Arial",sans-serif;
+  width: 1440px;
+  margin: 0 auto;
+  /*margin: 0 auto;*/
 	}
 
 /* надпись "Веб-сайты."*/
@@ -37,6 +40,10 @@ body {
 	font-family: "Roboto","Arial",sans-serif;
 }
 
+header {
+  background-color: darkgrey;
+  height: 273px;
+}
 
 <<<<<<< HEAD
 .main-header nav{
@@ -53,6 +60,7 @@ body {
   height: 65px;
   margin-left: 140px;
   margin-top: 49px;
+  margin-right: 200px;
   }
 
 .main-navigation li {
@@ -63,9 +71,148 @@ body {
   margin-right: 45px;
 }
 
+.title {
+  width: 760px;
+  height: 83px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: aquamarine;
+  margin: 0 auto;
+
+}
+
 .title h1 {
   margin: 0 auto;
 }
+
+.filter {
+  display: inline-block;
+  width: 100%;
+  background-color: green;
+  margin: 0 auto;
+}
+
+.filter div a {
+  margin:0 auto;
+  text-align: center;
+}
+
+.cost {
+  display: inline-block;
+  margin-left: 140px;
+  width: 120px;
+  margin-right: 280px;
+}
+
+.sort {
+  display: inline-block;
+  margin-right: 280px;
+  width: 135px;
+  }
+
+
+.selection-block {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.selection{
+  display: inline-block;
+}
+
+.selection-block .down{
+  display: inline-block;
+}
+
+.selection-block .up{
+  display: inline-block;
+}
+
+header nav {
+  display: inline-block;
+  background-color: green;
+}
+
+.catalog {
+
+  background-color: aquamarine;
+
+}
+
+.makets {
+  float: left;
+  height: 1970px;
+  width: 260px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.catalog-block {
+  background-color: aquamarine;
+  float: left;
+    vertical-align: middle;
+  /*float: left;*/
+  width: 360px;
+  height: 576px;
+  margin-right: 36px;
+  /*margin-left: 36px;*/
+  margin-bottom: 36px;
+  margin-top: 0px;
+  /*margin-left:*/
+}
+
+.catalog::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.circles {
+  width: 360px;
+  height: 40px;
+}
+
+.sidebar-left-2 {
+display: block;
+  /*float: left;*/
+  background-color: aquamarine;
+  width: 145px;
+}
+
+.sidebar-left-1 {
+display: block;
+  /*float: left;*/
+  background-color: aquamarine;
+  width: 145px;
+  }
+
+div .pagination {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact {
+  text-align: center;
+  vertical-align: middle;
+  width: 319px;
+  height: 310px;
+  background-color: aquamarine;
+}
+
+.contact .btn {
+  width: 219px;
+  height: 50px;
+  border:2px solid black;
+  padding: 10px 25px;
+  background-color: rgb(251,86,90);
+  color: white;
+}
+
+.pointer {
+  width: 231px;
+  height: 190px;
+}
+
 
 =======
 >>>>>>> origin/master
