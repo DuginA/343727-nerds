@@ -40,249 +40,386 @@ body {
 	font-family: "Roboto","Arial",sans-serif;
 }
 
-header {
+/*для Хедера*/
+
+.main-header {
+  /*height: 100px;*/
+  border: 2px solid red;
+  min-height: 70px;
+  width: 1200px;
+  margin-bottom: 100px;
   background-color: darkgrey;
-  height: 273px;
-}
-
-<<<<<<< HEAD
-.main-header nav{
-  display: inline-block;
-}
-
-.main-header .user-block{
-  float: right;
-  margin-top: 49px;
-}
-
-.logo img{
-  width: 160px;
-  height: 65px;
-  margin-left: 140px;
-  margin-top: 49px;
-  margin-right: 200px;
   }
 
-.main-navigation li {
-  display: inline-block;
-}
-
-.main-navigation a {
-  margin-right: 45px;
-}
-
-.title {
-  width: 760px;
-  height: 83px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: aquamarine;
-  margin: 0 auto;
-
-}
-
-.title h1 {
-  margin: 0 auto;
-}
-
-.filter {
-  display: inline-block;
-  width: 100%;
-  background-color: green;
-  margin: 0 auto;
-}
-
-.filter div a {
-  margin:0 auto;
-  text-align: center;
-}
-
-.cost {
-  display: inline-block;
-  margin-left: 140px;
-  width: 120px;
-  margin-right: 280px;
-}
-
-.sort {
-  display: inline-block;
-  margin-right: 280px;
-  width: 135px;
-  }
-
-
-.selection-block {
-  display: inline-block;
-  font-size: 12px;
-}
-
-.selection{
-  display: inline-block;
-}
-
-.selection-block .down{
-  display: inline-block;
-}
-
-.selection-block .up{
-  display: inline-block;
-}
-
-header nav {
-  display: inline-block;
-  background-color: green;
-}
-
-.catalog {
-
-  background-color: aquamarine;
-
-}
-
-.makets {
-  float: left;
-  height: 1970px;
-  width: 260px;
-  margin-left: 140px;
-  margin-right: 140px;
-}
-
-.catalog-block {
-  background-color: aquamarine;
-  float: left;
-    vertical-align: middle;
-  /*float: left;*/
-  width: 360px;
-  height: 576px;
-  margin-right: 36px;
-  /*margin-left: 36px;*/
-  margin-bottom: 36px;
-  margin-top: 0px;
-  /*margin-left:*/
-}
-
-.catalog::after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
-.circles {
-  width: 360px;
-  height: 40px;
-}
 
-.sidebar-left-2 {
-display: block;
-  /*float: left;*/
-  background-color: aquamarine;
-  width: 145px;
-}
 
-.sidebar-left-1 {
-display: block;
-  /*float: left;*/
-  background-color: aquamarine;
-  width: 145px;
-  }
-
-div .pagination {
+.container {
+  width: 1200px;
+  min-height: 70px;
   margin: 0 auto;
-  width: 100%;
-}
-
-.contact {
-  text-align: center;
-  vertical-align: middle;
-  width: 319px;
-  height: 310px;
-  background-color: aquamarine;
-}
-
-.contact .btn {
-  width: 219px;
-  height: 50px;
-  border:2px solid black;
-  padding: 10px 25px;
-  background-color: rgb(251,86,90);
-  color: white;
-}
-
-.pointer {
-  width: 231px;
-  height: 190px;
-}
-
-
-=======
->>>>>>> origin/master
-
-/* Стили для index.html*/
-
-main {
-  width: 1440px;
-}
-
-.composition {
-  display: flex;
-  justify-content: space-between;
-  width: 1100px;
-  background-color: aquamarine;
-  margin: 0 auto;
-}
-
-.web {
-  float: left;
-  width: 300px;
-  background-color: green;
-}
-
-.attachment {
-  float: left;
-  width: 300px;
-  background-color: red;
-}
-
-.presentation {
-  float: left;
-  width: 300px;
-  background-color: deepskyblue;
-}
-
-.text-slogan {
-  float: left;
-  width: 660px;
-  background-color: yellow;
-}
-.marker {
-  width: 231px;
-  height: 190px;
+  padding: 0 10px;
   background-color: lightblue;
 }
 
-.friends {
+.main-navigation {
   float: left;
-  background-color: salmon;
-  width: 1160px;
-  height: 68px;
+  width: 700px;
+  height: 70px;
+  /* Только для оформления сетки */
+  background-color: coral;
 }
 
-.friends .img {
-  float: left;
-  width: 199px;
-  height: 68px;
+.user-block {
+  float: right;
+  width: 140px;
+  height: 70px;
+  /* Только для оформления сетки */
+  background-color: aquamarine;
+}
+
+
+/*Для MAIN*/
+
+main {
   margin: 0 auto;
-  margin-right: 112px;
 }
 
-.friends a:last-child {
-  margin-right: 0px;
+/*Первый блок*/
+
+.slogan-slider {
+  width: 1200px;
+  margin-bottom: 80px;
 }
 
-
-about::after {
+.slogan-slider::after {
   content: "";
   display: table;
   clear: both;
 }
+
+
+.slogan-text {
+  height: 330px;
+  width: 420px;
+  float: left;
 }
+
+.header-slider {
+  float: right;
+}
+
+.slider {
+  float: left;
+}
+
+.slider img {
+  width: 400px;
+  height: 300px;
+}
+
+/*Второй блок*/
+
+.composition {
+width: 1200px;
+  margin-bottom: 0px;
+ height: 430px;
+}
+
+.composition::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+.composition-items {
+  float: left;
+  margin-right: 100px;
+  margin-top: 70px;
+}
+
+.composition-items:last-child {
+  margin-right: 0;
+}
+
+.composition-items.img {
+  width: 150px;
+  height: 100px;
+}
+
+/*Третий блок*/
+
+.about{
+  width: 1200px;
+  height: 528px;
+  }
+
+.about::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-slogan {
+  float: left;
+  width: 700px;
+  height: 415px;
+  padding: 20px;
+}
+
+.achievements {
+  float: right;
+  width: 400px;
+  height: 455px;
+  padding: 20px;
+}
+
+/*четвертый блок*/
+
+.friends {
+width: 1200px;
+margin: 0 auto;
+}
+
+.friends::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.friends-logo {
+  float: left;
+  width:260px;
+}
+
+/*Для подвала*/
+
+.footer {
+  width: 1200px;
+  min-height: 300px;
+}
+
+/*Как сделать карту????????????????*/
+
+.pointer {
+  width: 50px;
+  height: 50px;
+}
+
+.map {
+  margin-top: 69px;
+}
+
+.socials {
+  min-height: 115px;
+  width: 1000px;
+}
+
+.socials::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-social {
+  float: left;
+  width: 260px;
+  margin-left: 0px;
+  margin-top: 73px;
+}
+
+.contact {
+  width: 320px;
+  height: 288px;
+  border: 1px solid lightgrey;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: white;
+  background-color:rgb(251,96,90);
+  padding: 20px 50px;
+  }
+
+.social-btn {
+  display: inline-block;
+  width:78px;
+  height: 78px;
+  margin: 0 2px;
+
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+
+  background: lightgrey url("img/Shape 2 copy 3.png") center;
+  border-radius: 45px;
+}
+
+.social-btn social-btn-vk {
+  background-image: url('img/vk-icon.png') no-repeat;
+}
+
+.social-text {
+  float: right;
+  min-width: 548px;
+  margin-top: 73px;
+}
+
+.social-text {
+  font-size: 36px;
+}
+
+.social-text p {
+  font-size: 16px;
+}
+
+
+
+
+/*Стили для Каталога*/
+
+
+.title {
+  width: 1160px;
+  height: 95px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*стили для горизонтального фильтра*/
+
+.filter {
+  width: 1160px;
+  height: 100px;
+  border: 1px solid lightgrey;
+  vertical-align: middle;
+}
+
+.filter::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cost {
+  float: left;
+  width: 160px;
+  }
+
+.sort {
+  float: left;
+  width: 160px;
+  margin-left: 250px;
+}
+
+.selection-block {
+  float: right;
+  width: auto;
+}
+
+.selection {
+  display: inline-block;
+}
+
+a.selection  {
+  color: rgb(178,178,178);
+  text-decoration: none;
+}
+
+/*Стили для левого фильтра*/
+
+.filter-left {
+  width: 260px;
+}
+
+/*.left {
+  display: inline-block;
+  width: 115px;
+}*/
+
+/*.right {
+  display: inline-block;
+  margin-left: 35px;
+}*/
+
+.block-left {
+  display: inline-block;
+}
+
+.field {
+  display: inline-block;
+  min-width: 85px;
+}
+
+.min-price {
+  width: 80px;
+}
+
+.max-price {
+  width: 80px;
+}
+
+/*Стили для "сетки"*/
+
+.sidebar-left-2 {
+  width: 200px;
+}
+
+.sidebar-left-2-1 {
+  display: block;
+  width: 200px;
+}
+
+.sidebar-left-while {
+  float: left;
+}
+
+/*стили для каталога */
+
+.sidebar-catalog {
+  width: 1160px;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+.sidebar-catalog::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.catalog {
+  float: left;
+  width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 360px;
+  height: 615px;
+}
+
+div.pagination {
+  margin: 0 auto;
+  width: 444px;
+}
+
+.pagination-page {
+  width: 50px;
+  height: 50px;
+  border: 2px solid lightgrey;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
