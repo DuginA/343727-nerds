@@ -18,7 +18,7 @@
           <a href="#">Клиенты</a>
         </li>
         <li>
-          <a href="#">Магазин</a>
+          <a class="active">Магазин</a>
         </li>
         <li>
           <a href="#">Контакты</a>
@@ -34,7 +34,7 @@
   <div class="title">
     <h1>Магазин готовых шаблонов</h1>
   </div>
-  <div class="filter">
+  <div class="filter clearfix">
     <div class="cost">Стоимость</div>
     <div class="sort">Сортировать</div>
     <div class="selection-block">
@@ -45,16 +45,31 @@
       <a href="#" class="up"><img src="img/sort-up.png" alt="up"></a>
     </div>
   </div>
-  <div class="sidebar-catalog">
+  <div class="sidebar-catalog clearfix">
   <div class="sidebar-left-while">
-    <div class="filter-left">
-      <!--<div class="left">-->
+    <div class="range-filter">
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar" style="margin-left: 20%; width: 30%"></div>
+        </div>
+        <div class="toggle toggle-min"></div>
+        <div class="toggle toggle-max"></div>
+      </div>
+      <div class="price-controls">
+        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+        <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+      </div>
+    </div>
+
+        <!--<div class="filter-left">
+      <div class="left">
           <div class="block-left"><span class="from">от</span></div>
           <div class="field"><input class="min-price" type="text" value="0"></div>
-     <!--<div class="right">-->
+     <div class="right">
           <div class="block-left"><span class="till">до</span></div>
           <div class="field"><input class="max-price" type="text" value="15 000"></div>
-    </div>
+    </div>-->
+
     <h2>
         Сетка:
     </h2>
@@ -67,7 +82,7 @@
         Особенности:
     </h2>
     <div class="sidebar-left-1">
-        <div class="sidebar-left-2-1"><label><input type="checkbox" name="features" value="BaxterOfCalifornia" checked>Слайдер</label></div>
+        <div class="sidebar-left-2-1"><label><input type="checkbox" name="features" value="BaxterOfCalifornia" checked>Слайдер</label><span></span></div>
         <div class="sidebar-left-2-1"><label><input type="checkbox" name="features" value="MrNatty">Блок преимуществ</label></div>
         <div class="sidebar-left-2-1"><label><input type="checkbox" name="features" value="Suavecito" checked>Новости</label></div>
         <div class="sidebar-left-2-1"><label><input type="checkbox" name="features" value="Malin-goetz">Галерея</label></div>
@@ -75,46 +90,62 @@
      </div>
       <button class="btm" type="submit">Показать</button>
   </div>
+    <!--РАЗДЕЛ "КАТАЛОГ ВЕБ-САЙТОВ-->
   <div class="catalog">
       <section class="catalog-item">
-        <div class="circles" >
-          <!--(Белые круги вверху каждого блока. Вставляем через CSS)
-          <img src="#" width="20" height="10" alt="Круг белый">-->
+        <div class="up-line-catalog">
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
         </div>
-        <a href="#" class="catalog-block" target="_blank"><img src="img/img-sedona.jpg" alt="Основная картинка 1"></a>
+         <a href="#" class="catalog-block" target="_blank">
+          <img src="img/img-sedona.jpg" alt="Основная картинка 1">
+          <!--<div class="catalog-block-active">
+            <span>SEDONA</span>
+            <p>Информационный сайт для туристов</p>
+            <div class="write">
+              <a href="#" class="btn-text">9 900 руб.</a>
+            </div>
+          </div>-->
+        </a>
       </section>
       <section class="catalog-item">
-        <div class="circles" >
-          <!--(Белые круги вверху каждого блока. Вставляем через CSS)
-          <img src="#" width="20" height="10" alt="Круг белый">-->
+        <div class="up-line-catalog">
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
         </div>
-        <a href="#" class="catalog-block" target="_blank"><img src="img/img-pink.jpg" alt="Основная картинка 2"></a>
+        <a href="#" class="catalog-block" target="_blank"><img src="img/img-pink.jpg" alt="Основная картинка 1"></a>
       </section>
       <section class="catalog-item">
-        <div class="circles" >
-          <!--(Белые круги вверху каждого блока. Вставляем через CSS)
-          <img src="#" width="20" height="10" alt="Круг белый">-->
+        <div class="up-line-catalog">
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
         </div>
         <a href="#" class="catalog-block" target="_blank"><img src="img/img-barbershop.jpg" alt="Основная картинка 2"></a>
       </section>
       <section class="catalog-item">
-        <div class="circles" >
-          <!--(Белые круги вверху каждого блока. Вставляем через CSS)
-          <img src="#" width="20" height="10" alt="Круг белый">-->
+        <div class="up-line-catalog">
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
         </div>
         <a href="#" class="catalog-block" target="_blank"><img src="img/img-mishka.jpg" alt="Основная картинка 3"></a>
       </section>
       <section class="catalog-item">
-        <div class="circles" >
-          <!--(Белые круги вверху каждого блока. Вставляем через CSS)
-          <img src="#" width="20" height="10" alt="Круг белый">-->
+        <div class="up-line-catalog">
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
         </div>
         <a href="#" class="catalog-block" target="_blank"><img src="img/img-aplus.jpg" alt="Основная картинка 4"></a>
       </section>
       <section class="catalog-item">
-        <div class="circles" >
-          <!--(Белые круги вверху каждого блока. Вставляем через CSS)
-          <img src="#" width="20" height="10" alt="Круг белый">-->
+        <div class="up-line-catalog">
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
         </div>
         <a href="#" class="catalog-block" target="_blank"><img src="img/img-kvast.jpg" alt="Основная картинка 5"></a>
       </section>
@@ -129,26 +160,30 @@
 </main>
 <footer class="footer">
   <div class="map">
-    <img src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1413.2229124869714!2d30.322021884189716!3d59.938795755984096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1493319919234" frameborder="0" style="border:0" allowfullscreen>
+    <div class="main-map">
+      <img src="img/Слой%202.png" class="map-img" alt="Карта">
+    </div>
     <div class="pointer">
       <img src="img/map-marker.png" class="marker" alt="nerds">
     </div>
     <div class="contact">
       <span>Nёrds Design Studio</span>
       <p>119186, Санкт-Петербург,<br>ул. Большая конюшенная, д.19/8</p>
-      <p>телефон +7(812)275-75-75</p>
-      <a href="#" class="btn">Напишите нам</a>
+      <p>тел. +7(812)275-75-75</p>
+      <div class="write">
+        <a href="#" class="btn-text">НАПИШИТЕ НАМ</a>
+      </div>
     </div>
   </div>
-  <div class="socials">
+  <div class="socials clearfix">
     <div class="footer-social">
-      <a class="social-btn social-btn-vk" href="#"></a>
-      <a class="social-btn social-btn-fb" href="#"></a>
-      <a class="social-btn social-btn-inst" href="#"></a>
+      <a class="social-btn" href="#"><img class="social-btn-vk" src="img/vk-icon.png"></a>
+      <a class="social-btn" href="#"><img class=" social-btn-fb" src="img/fb-icon.png"></a>
+      <a class="social-btn" href="#"><img class="social-btn-inst" src="img/insta-icon.png"></a>
     </div>
     <div class="social-text">
         <span>Давайте дружить, это выгодно!<span>
-        <p>Скидка 10% для друзей</p>
+        <p>Скидка 10% для друзей из социальных сетей!</p>
     </div>
   </div>
 </footer>
