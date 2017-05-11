@@ -1,58 +1,58 @@
 
-/* надпись "Мир никогда не будет прежним..."*/
 body {
-
-	font-size: 16px;
-	line-height: 24px;
-	color: #000000;
-	font-weight: bold;
-	font-family: "Roboto","Arial",sans-serif;
-  /*width: 1440px;*/
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Roboto", "Arial", sans-serif;
   margin: 0 auto;
-  /*margin: 0 auto;*/
-	}
-
-/* надпись "Веб-сайты."*/
-.websites {
-	font-size: 24px;
-	line-height: 30px;
-	color: #000000;
-	font-weight: bold;
-	font-family: "Roboto","Arial",sans-serif;
+  width: 1440px;
 }
 
-/* надпись "Мы-маленькая..."*/
-
-.about-us {
-	font-size: 45px;
-	line-height: 45px;
-	color: #000000;
-	font-weight: bold;
-	font-family: "Roboto","Arial",sans-serif;
-}
-
-/* надпись ",Долго, дорого, скрупулезно"*/
-.slogan {
-	font-size: 55px;
-	line-height: 55px;
-	color: #000000;
-	font-weight: bold;
-	font-family: "Roboto","Arial",sans-serif;
-}
-
-/*для Хедера*/
-
-.main-header {
-  /*height: 100px;*/
-  border: 2px solid red;
-  min-height: 70px;
-  width: 1160px;
-  margin: 0 auto;
+.inner-container-header {
+   width: 1440px;
+   margin: 0 auto;
   background-color: rgb(238,238,238);
+ }
+
+.inner-container-main {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.inner-container-footer  {
+  width: 1440px;
+  height: 500px;
+  margin: 0 auto;
+  background: lightgray url(../img/map1.png) no-repeat;
+  background-size: cover;
+}
+
+.inner-container-second {
+  width: 1160px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
+}
+
+.inner-container-second-footer {
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner-container-adress {
+  background-color: red;
+}
+
+header.main {
+  height: auto;
+  background-color: rgb(238, 238, 238);
   padding-top: 40px;
-  }
+}
 
 .clearfix::after {
   content: "";
@@ -60,41 +60,29 @@ body {
   clear: both;
 }
 
-.container {
-  width: 1160px;
-  /*min-height: 70px;*/
-  margin: 0 auto;
-  padding-left: 0px;
-  background-color: rgb(238,238,238);
-  /*margin-top: 75px;*/
-}
-
 .main-navigation {
   float: left;
-  width: 780px;
-  /*height: 70px;*/
-  /* Только для оформления сетки */
-  background-color: rgb(238,238,238);
-
+  width: auto;
+  background-color: rgb(238, 238, 238);
 }
 
-.logo img {
+a.logo {
   float: left;
+  margin-left: 0px;
 }
 
- .logo img:hover {
-    opacity: 0.8;
+.logo img:hover {
+  opacity: 0.8;
 }
 
 .logo img:active {
- opacity: 0.6;
+  opacity: 0.6;
 }
 
-
-
 .main-navigation ul {
-  float: left;
-  margin-left: 50px;
+  float: right;
+  margin-left: 172px;
+  margin-top: 10px;
 }
 
 .main-navigation li {
@@ -102,6 +90,7 @@ body {
   vertical-align: top;
   font-size: 16px;
   line-height: 30px;
+  padding-left: 28px;
 }
 
 .main-navigation .active {
@@ -113,173 +102,238 @@ body {
   position: absolute;
   right: 0px;
   bottom: 0;
-  top:30px;
-  left: 20px;
+  top: 30px;
+  left: 0px;
 
   height: 2px;
 
-  background-color: rgb(251,26,90);
+  background-color: rgb(251, 26, 90);
 }
 
-
-.main-navigation li a {
+.main-navigation a {
   display: block;
-  padding-left:20px;
   color: black;
   text-decoration: none;
 }
 
 li a:hover {
   display: block;
-  padding-left:20px;
-  color: rgb(215,86,90);
+  color: rgb(215, 86, 90);
   text-decoration: none;
 }
 
 li a:active {
   display: block;
-  padding-left:20px;
-  color: rgb(166,166,166);
+  color: rgb(166, 166, 166);
   text-decoration: none;
 }
 
 .user-block {
   float: right;
-  width: 140px;
-  /*height: 70px;*/
-  /* Только для оформления сетки */
-  background-color: rgb(238,238,238);
+  width: auto;
+}
 
-  vertical-align: top;
+.login {
+  position: relative;
+
+  display: inline-block;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-top: 15px;
 
   font-size: 16px;
-  line-height: 30px;
-
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
-.user-block a {
-  text-decoration: none;
+  line-height: 20px;
+  vertical-align: top;
   color: black;
-}
-
-.user-block a:hover {
   text-decoration: none;
-  color: rgb(251,86,90);
 }
 
-.user-block a:active {
-  text-decoration: none;
-  color: rgb(166,166,166);
+.login:hover {
+  background-color: rgb(238, 238, 238);
+  color: rgb(215, 86, 90);
 }
 
-/*Для MAIN*/
-
-main {
-  margin: 0 auto;
+.login:active {
+  color: rgb(197, 197, 197);
 }
 
-/*Первый блок*/
+.login::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 20px;
+
+  width: 18px;
+  height: 18px;
+
+  background: transparent url("../img/bag.png") no-repeat;
+  background-position: 1px 1px;
+  opacity: 0.3;
+}
+
+.login:hover::before {
+  opacity: 0.3;
+}
 
 /*Стили для СЛАЙДЕРА с учебного макета*/
 
-.slider{
+.slide-title p {
+  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.slider {
   display: block;
-  position:relative;
-  width:1160px;
-  height:310px;
-  margin:0 auto;
+  position: relative;
+  width: auto;
+  height: 310px;
+  /*margin:0 auto;*/
+  background-color: rgb(238, 238, 238);
 }
+
 .slider input[type=radio] {
-  position:absolute;
-  opacity:0;
+  position: absolute;
+  opacity: 0;
 }
-.slider-controls{
-  position:absolute;
-  bottom:95px;
-  left:50%;
-  width:200px;
-  height:10px;
-  margin-left:-100px;
-  text-align:center;
-  z-index:1000;
+
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
 }
-.slider-controls label{
-  display:inline-block;
-  width:4px;
-  height:4px;
-  margin:0 3px;
-  background:white;
-  border:3px solid white;
-  vertical-align:top;
-  border-radius:50%;
-  cursor:pointer;
+
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  background: white;
+  border: 3px solid white;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
 }
+
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background:#c1c1c1;
+  background: #c1c1c1;
 }
-.slide{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  overflow:hidden;
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-.slide-text{
-  width:380px;
-  padding:30px 0;
-  color:#283136;
+
+.slide-text {
+  width: 380px;
+  padding: 30px 0;
+  color: #283136;
 }
-.slide-title{
-  font-size:36px;
-  line-height:1;
-  font-weight:bold;
-  color:black;
+
+.slide-title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  color: black;
 }
-.slide .btn{
-  display:block;
-  width:240px;
-  padding:10px 0;
-  margin-top:25px;
-  font-size:12px;
-  color:white;
-  text-transform:uppercase;
-  text-align:center;
-  text-decoration:none;
-  background:#fb565a;
-  border-radius:3px;
+
+.slide .btn {
+  display: block;
+  width: 240px;
+  padding: 10px 0;
+  margin-top: 25px;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
 }
-.slide:nth-child(1){
-  background-image:url('img/Slide1.png');
-  background-repeat:no-repeat;
-  /*background-position:100% 10px;*/
+
+.slide:nth-child(1) {
+  background-image: url('../img/Slide1.png');
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
 }
-.slide:nth-child(2){
-  background-image:url('img/slider-bg-2.png');
-  background-repeat:no-repeat;
-  background-position:100% 10px;
+
+.slide:nth-child(2) {
+  background-image: url('../img/slide2.png');
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
 }
-.slide:nth-child(3){
-  background-image:url('img/slider-bg-3.png');
-  background-repeat:no-repeat;
-  background-position:100% 0;
+
+.slide:nth-child(3) {
+  background-image: url('../img/slide3.png');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
 }
-.slide{
-  display:none;
+
+.slide {
+  display: none;
 }
+
 #btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
+
 #btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
+
 #btn-3:checked ~ .slides .slide:nth-child(3) {
   display: block;
 }
+
+
+
+
+/*Что-то ранее написанное*/
+
+
+/* надпись "Веб-сайты."*/
+.websites {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* надпись "Мы-маленькая..."*/
+
+.about-us {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* надпись ",Долго, дорого, скрупулезно"*/
+.slogan {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+/*для Хедера*/
+
+
 
 /*Мои стили для Слайдера*/
 
@@ -355,21 +409,9 @@ main {
 /*Второй блок*/
 
 .composition {
-width: 1160px;
   height: auto;
   margin-bottom: 0px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
- /*height: 430px;*/
 }
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-  }
 
 .composition-items {
   float: left;
@@ -378,7 +420,7 @@ width: 1160px;
   margin-bottom: 80px;
 }
 
-.composition-items p{
+.composition-items p {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -394,7 +436,7 @@ width: 1160px;
 .composition-items .red {
   text-decoration: none;
   color: white;
-  background-color:rgb(251,96,90);
+  background-color: rgb(251, 96, 90);
   padding: 20px 40px;
   font-size: 16px;
   line-height: 18px;
@@ -403,7 +445,7 @@ width: 1160px;
 .composition-items .red:hover {
   text-decoration: none;
   color: white;
-  background-color:rgb(231,66,70);
+  background-color: rgb(231, 66, 70);
   padding: 20px 40px;
   font-size: 16px;
   line-height: 18px;
@@ -411,8 +453,8 @@ width: 1160px;
 
 .composition-items .red:active {
   text-decoration: none;
-  color: rgb(226,108,110);
-  background-color:rgb(215,55,59);
+  color: rgb(226, 108, 110);
+  background-color: rgb(215, 55, 59);
   padding: 20px 40px;
   font-size: 16px;
   line-height: 18px;
@@ -421,27 +463,25 @@ width: 1160px;
 .composition-items .green {
   text-decoration: none;
   color: white;
-  background-color:rgb(0,202,116);
+  background-color: rgb(0, 202, 116);
   padding: 20px 40px;
   font-size: 16px;
   line-height: 18px;
 }
-
 
 .composition-items .green:hover {
   text-decoration: none;
   color: white;
-  background-color:rgb(0,188,108);
+  background-color: rgb(0, 188, 108);
   padding: 20px 40px;
   font-size: 16px;
   line-height: 18px;
 }
 
-
 .composition-items .green:active {
   text-decoration: none;
-  color: rgb(56,189,132);
-  background-color:rgb(0,170,98);
+  color: rgb(56, 189, 132);
+  background-color: rgb(0, 170, 98);
   padding: 20px 40px;
   font-size: 16px;
   line-height: 18px;
@@ -450,7 +490,7 @@ width: 1160px;
 .composition-items .yellow {
   text-decoration: none;
   color: white;
-  background-color:rgb(239,200,73);
+  background-color: rgb(239, 200, 73);
   padding: 20px 40px;
   font-size: 16px;
   line-height: 18px;
@@ -459,7 +499,7 @@ width: 1160px;
 .composition-items .yellow:hover {
   text-decoration: none;
   color: white;
-  background-color:rgb(234,181,52);
+  background-color: rgb(234, 181, 52);
   padding: 20px 40px;
   font-size: 16px;
   line-height: 18px;
@@ -467,8 +507,8 @@ width: 1160px;
 
 .composition-items .yellow:active {
   text-decoration: none;
-  color: rgb(237,194,101);
-  background-color:rgb(229,167,34);
+  color: rgb(237, 194, 101);
+  background-color: rgb(229, 167, 34);
   padding: 20px 40px;
   font-size: 16px;
   line-height: 18px;
@@ -485,13 +525,13 @@ width: 1160px;
 
 /*Третий блок*/
 
-.about{
-  width: 1160px;
+.about {
   height: auto;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  }
+  border-top: 1px solid lightgray;
+  padding-top: 42px;
+  padding-bottom: 75px;
+  /*margin: 0 auto;*/
+}
 
 .clearfix:after {
   content: "";
@@ -503,7 +543,7 @@ width: 1160px;
   float: left;
   width: 700px;
   height: 415px;
-  padding: 0px;
+  /*padding: 0px;*/
 }
 
 .achievements {
@@ -536,7 +576,7 @@ width: 1160px;
 }
 
 .percent {
-  display:block;
+  display: block;
   margin-top: 46px;
 }
 
@@ -549,23 +589,22 @@ width: 1160px;
 
 /*четвертый блок*/
 
-
 .friends {
-    vertical-align: middle;
-width: 1160px;
   height: 180px;
-margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .friends-logo {
-  display: block;
-  float: left;
+  flex: 0 0 auto;
 }
-
 
 .clearfix:after {
   content: "";
@@ -573,41 +612,33 @@ margin: 0 auto;
   clear: both;
 }
 
-.friends-logo img {
-  float: left;
-  margin-right: 108px;
-  vertical-align: middle;
-  /*margin-right: 40px;*/
-}
-
 .friends-logo .html {
   width: 199px;
   height: 68px;
   padding-left: 30px;
-  opacity:0.4;
+  opacity: 0.4;
 }
 
 .friends-logo .html:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 .friends-logo .html:active {
-  opacity:0.2;
+  opacity: 0.2;
 }
-
 
 .friends-logo .borodinsky {
   width: 209px;
   height: 90px;
-  opacity:0.4;
+  opacity: 0.4;
 }
 
 .friends-logo .borodinsky:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 .friends-logo .borodinsky:active {
-  opacity:0.2;
+  opacity: 0.2;
 }
 
 .friends-logo .pink {
@@ -617,11 +648,11 @@ margin: 0 auto;
 }
 
 .friends-logo .pink:hover {
- opacity:1;
+  opacity: 1;
 }
 
 .friends-logo .pink:active {
- opacity: 0.2;
+  opacity: 0.2;
 }
 
 .friends-logo .mishka {
@@ -636,39 +667,21 @@ margin: 0 auto;
 }
 
 .friends-logo .mishka:active {
- opacity: 0.2;
-}
-
-/*.friends-logo img:last-child {
-  margin-right: 0px;*/
+  opacity: 0.2;
 }
 
 /*Для подвала*/
 
-.footer {
-  width: 1160px;
-  /*min-height: 300px;*/
-  margin: 0 auto;
-
+footer {
+  margin-top: 82px;
 }
-
-/*Как сделать карту????????????????*/
 
 .map {
   position: relative;
-  width: 1440px;
-  margin: 0 auto;
   height: 502px;
 }
 
-/*.main-map {
-  text-align: center;
-  /*height: 500px;*//*
-  background: url('img/Слой 2.png') no-repeat yellow;
-}*/
-
-.map-img{
-  margin: 0 auto;
+.map-img {
   width: 1440px;
   height: 416px;
   padding-top: 82px;
@@ -678,10 +691,10 @@ margin: 0 auto;
   width: 50px;
   height: 50px;
 
-  position: relative;
-  left:820px;
-  top: -350px;
-  }
+  position: absolute;
+  left: 740px;
+  top: 180px;
+}
 
 .socials {
   min-height: 115px;
@@ -697,8 +710,7 @@ margin: 0 auto;
 .footer-social {
   float: left;
   width: 260px;
-  margin-left: 0px;
-  margin-top: 73px;
+  margin-top: 0px;
 }
 
 .contact {
@@ -710,8 +722,8 @@ margin: 0 auto;
   text-align: left;
 
   position: absolute;
-  left:120px;
-  top: 122px;
+  left: 20px;
+  top: 80px;
   background-color: white;
 }
 
@@ -726,20 +738,44 @@ margin: 0 auto;
   margin-top: 41px;
 }
 
-.btn-text  {
+.btn-text {
   text-decoration: none;
   color: white;
-  background-color:rgb(251,96,90);
+  background-color: rgb(251, 96, 90);
   padding: 20px 50px;
   font-size: 16px;
   line-height: 18px;
   border-radius: 4px;
-  }
+}
 
-.contact .btn-text  {
+.show {
+  padding: 16px 90px;
+  color: black;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto", "Arial", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgb(233, 233, 233);
+  border-color: rgb(233, 233, 233);
+  border-radius: 4px;
+
+}
+
+.show:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+.show:active {
+  background-color: rgb(213, 213, 213);
+  color: rgb(149, 149, 149);
+  border-top:1px solid rgb(149,149,149);
+}
+
+.contact .btn-text {
   text-decoration: none;
   color: white;
-  background-color:rgb(251,96,90);
+  background-color: rgb(251, 96, 90);
   padding: 20px 65px;
   font-size: 16px;
   line-height: 18px;
@@ -747,25 +783,20 @@ margin: 0 auto;
 }
 
 .socials {
-  width: 1160px;
-  margin: 0 auto;
   margin-top: 70px;
-}
+  }
 
 .footer-social {
   position: relative;
   float: left;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
 }
 
 .social-btn {
   display: inline-block;
-  width:78px;
+  width: 78px;
   height: 78px;
-  margin: 0 2px;
+  /*margin: 0 2px;*/
 
   font-size: 0;
   vertical-align: top;
@@ -777,54 +808,54 @@ margin: 0 auto;
 
 .social-btn:hover {
   display: inline-block;
-  width:78px;
+  width: 78px;
   height: 78px;
-  margin: 0 2px;
+  /*margin: 0 2px;*/
 
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
 
-  background-color:rgb(231,66,70);
+  background-color: rgb(231, 66, 70);
   border-radius: 45px;
 }
 
 .social-btn:active {
   display: inline-block;
-  width:78px;
+  width: 78px;
   height: 78px;
-  margin: 0 2px;
+  /*margin: 0 2px;*/
 
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
 
-  background-color:rgb(215,55,59);
+  background-color: rgb(215, 55, 59);
   border-radius: 45px;
 }
 
 .social-btn-vk {
   position: absolute;
-  left: 50px;
-  top:32px;
+  left: 35px;
+  top: 32px;
 }
 
 .social-btn-vk:active {
   position: absolute;
-  left: 50px;
-  top:32px;
+  left: 35px;
+  top: 32px;
 }
 
 .social-btn-fb {
   position: absolute;
-  left: 142px;
-  top:29px;
+  left: 125px;
+  top: 29px;
 }
 
 .social-btn-inst {
   position: absolute;
-  left: 227px;
-  top:28px;
+  left: 204px;
+  top: 28px;
 }
 
 /*.footer-social.social-btn-vk {
@@ -834,7 +865,7 @@ margin: 0 auto;
 .social-text {
   float: left;
   min-width: 548px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   margin-left: 120px;
   font-size: 36px;
 }
@@ -843,69 +874,101 @@ margin: 0 auto;
   font-size: 16px;
 }
 
-
 /*Стили для Каталога*/
 
-
-.title {
-  width: 1160px;
-  height: 95px;
-  margin: 0 auto;
+.title h1 {
+  width: auto;
+  height: auto;
+  /*margin: 0 auto;*/
   text-align: center;
-  padding-top: 0px;
-  font-size: 35px;
+  /*padding-top: 0px;*/
+  font-size: 55px;
+  line-height: 55px;
   font-family: "Roboto", "Arial", sans-serif;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /*стили для горизонтального фильтра*/
 
 .filter {
-  width: 1160px;
+  width: auto;
   height: 100px;
-  margin: 0 auto;
-  border: 1px solid lightgrey;
-  vertical-align: middle;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+  /* margin: 0 auto;*/
+  /*border: 0px solid lightgrey;*/
+  padding-top: 61px;
 }
 
 .cost {
   float: left;
-  width: 160px;
-  }
+  width: auto;
+  margin-right: 222px;
+}
 
 .sort {
   float: left;
-  width: 160px;
-  margin-left: 250px;
+  width: auto;
+  margin-left: 0px;
 }
 
 .selection-block {
   float: right;
   width: auto;
+  margin-right: 70px;
 }
 
 .selection {
   display: inline-block;
+  font-weight: normal;
+  margin-left: 20px;
 }
 
-a.selection  {
-  color: rgb(222,222,222);
+a.selection {
+  color: rgb(222, 222, 222);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+a h3 {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+a.selection:hover {
+  color: rgb(143, 143, 143);
   text-decoration: none;
 }
 
-a.selection:hover  {
-  color: rgb(143,143,143);
+a.selection:active {
+  color: rgb(127, 127, 127);
   text-decoration: none;
 }
 
-a.selection:active  {
-  color: rgb(127,127,127);
-  text-decoration: none;
+.down {
+  opacity: 0.3;
+}
+
+.down:hover {
+  opacity: 0.5;
+}
+
+.down:active {
+  opacity: 1;
+}
+
+.up {
+  opacity: 0.3;
+}
+
+.up:hover {
+  opacity: 0.5;
+}
+
+.up:active {
+  opacity: 1;
 }
 
 /*Стили для левого фильтра*/
@@ -919,8 +982,6 @@ a.selection:active  {
   position: relative;
   height: 41px;
   padding-top: 39px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 15px;
   border-radius: 5px;
   background: #f1f1f1;
@@ -940,7 +1001,6 @@ a.selection:active  {
 .range-controls .toggle {
   position: absolute;
   top: 30px;
-  left: 0px;
   width: 4px;
   height: 4px;
   cursor: pointer;
@@ -985,20 +1045,9 @@ a.selection:active  {
   background: #f1f1f1;
 }
 
-
 .filter-left {
   width: 260px;
 }
-
-/*.left {
-  display: inline-block;
-  width: 115px;
-}*/
-
-/*.right {
-  display: inline-block;
-  margin-left: 35px;
-}*/
 
 .block-left {
   display: inline-block;
@@ -1028,39 +1077,63 @@ a.selection:active  {
   width: 200px;
 }
 
-.sidebar-left-while {
-  float: left;
+.sidebar-left-1 label {
+  width: 25px; /* Ширина рисунка */
+  height: 25px; /* Высота рисунка */
+  display: block; /* Блочный элемент */
+  position: relative; /* Относительное позиционирование */
+}
+
+.sidebar-left-1 input[type="checkbox"] + span {
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/checkbox-off.png) no-repeat; /* Фоновый рисунок */
+  cursor: pointer; /* Курсор в виде руки */
+}
+
+input[type="checkbox"]:checked + span {
+  background: url(../img/checkbox-on.png) no-repeat; /* Фоновый рисунок */
 }
 
 /*СТИЛИ ДЛЯ ПРЕДМЕТОВ КАТАЛОГА*/
 
 .sidebar-catalog {
- width: 1160px;
-  margin: 0 auto;
-  margin-left: 20px;
-  }
+  width: auto;
+  /*margin: 0 auto;*/
+  margin-left: 0px;
+  display: inline-block;
+}
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+.sidebar-left-while {
+  float: left;
 }
 
 .catalog {
-  float: left;
-  width: 820px;
-  margin: 0 auto;
+  float: right;
+  width: 800px;
+  /* margin: 0 auto;*/
   text-align: center;
+  margin-left: 0px;
 }
 
 .catalog-item {
   display: inline-block;
+  font-size: 0px;
   width: 360px;
-  /*height: 300px;*/
+  height: auto;
+  margin-right: 0px;
+  position: relative;
+}
+
+.catalog-item:nth-child(odd) {
+  margin-left: 0px;
 }
 
 .up-line-catalog {
-  background-color: rgb(233,233,233);
+  background-color: rgb(233, 233, 233);
   height: 40px;
 }
 
@@ -1069,41 +1142,27 @@ a.selection:active  {
   width: 15px;
   height: 15px;
   border-radius: 10px;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
 
   margin-left: 9px;
   margin-top: 13px;
 }
 
 .up-line-catalog:hover {
-  background-color: rgb(77,77,77);
- }
+  background-color: rgb(77, 77, 77);
+}
 
 .circles:first-child {
   margin-left: 16px;
 }
 
-/*div.catalog-block-active:hover {
-  content: "";
-  position: absolute;
-  right:0px;
-  bottom: 0;
-  top:0px;
-  left:0px;
-  text-align: center;
-
-  height: 360px;
-
-  background-color: rgb(251,26,90);
-}*/
-
-
-
 /*СТИЛИ ДЛЯ НУМЕРАЦИИ СТРАНИЦ*/
 
-div.pagination {
-  margin: 0 auto;
-  width: 444px;
+.pagination {
+  width: auto;
+  height: auto;
+  margin-top: 66px;
+  text-align: center;
 }
 
 .pagination-page {
@@ -1114,7 +1173,7 @@ div.pagination {
   text-decoration: none;
   color: black;
   margin-right: 10px;
-  background-color: rgb(238,238,238);
+  background-color: rgb(238, 238, 238);
 }
 
 .pagination-page:hover {
@@ -1125,7 +1184,7 @@ div.pagination {
   text-decoration: none;
   color: black;
   margin-right: 10px;
-  background-color: rgb(223,223,223);
+  background-color: rgb(223, 223, 223);
 }
 
 .pagination-page:active {
@@ -1134,9 +1193,89 @@ div.pagination {
   border: 2px solid lightgrey;
   padding: 10px 15px;
   text-decoration: none;
-  color: rgb(166,166,166);
+  color: rgb(166, 166, 166);
   margin-right: 10px;
-  background-color: rgb(213,213,213);
+  background-color: rgb(213, 213, 213);
   box-shadow: 0 -1px 0 0;
 }
 
+.card-popover {
+  background-color: rgb(238,238,238);
+  height: 230px;
+  font-size: 5em;
+  position: absolute;
+  top: 385px;
+  bottom: 0px;
+  width: 100%;
+  opacity: 0;
+  /*transition-property: opacity;
+  transition-duration: 350ms;*/
+}
+
+/*.catalog-item:hover .card-popover {
+  opacity: 1;
+}*/
+
+.catalog-block:hover .card-popover {
+  opacity: 1;
+}
+
+.catalog-block:hover .up-line-catalog {
+  background-color: rgb(77, 77, 77);
+}
+
+.card-name {
+  color: black;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-weight: bold;
+  margin-top:25px;
+}
+
+.card-subtitle {
+  color: black;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.card-cost {
+  background-color: rgb(251, 96, 90);
+  color: white;
+  padding: 15px 60px;
+  border: rgb(251, 96, 90);
+  border-radius:3px;
+
+  margin-top: 20px;
+  margin-bottom: 41px;
+}
+
+
+.inner-container-header-title {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: rgb(238,238,238);
+}
+
+.inner-container-title {
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(238,238,238);
+  margin: 0 auto;
+}
+
+.inner-container-header-navigation {
+  width: 1440px;
+  background-color: rgb(238,238,238);
+  margin: 0 auto;
+}
+
+.inner-container-navigation {
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: red;
+}
